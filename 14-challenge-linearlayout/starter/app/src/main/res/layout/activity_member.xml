@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.raywenderlich.android.octomembers.ui.member.MemberActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_avatar_container_size"
+        android:background="@color/colorAccent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/memberAvatar"
+            android:layout_width="@dimen/detail_avatar_size"
+            android:layout_height="@dimen/detail_avatar_size"
+            android:contentDescription="@string/contentDescription_teamMemberAvatar"
+            tools:src="@drawable/ic_launcher_background"></ImageView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/member_label"
+                android:text="@string/label_name"></TextView>
+
+            <TextView
+                android:id="@+id/memberName"
+                style="@style/member_info"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/member_label"
+                android:text="@string/label_login"></TextView>
+
+            <TextView
+                android:id="@+id/memberLogin"
+                style="@style/member_info"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/member_label"
+                android:text="@string/label_company"></TextView>
+
+            <TextView
+                android:id="@+id/memberCompany"
+                style="@style/member_info"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/member_label"
+                android:text="@string/label_email"></TextView>
+
+            <TextView
+                android:id="@+id/memberEmail"
+                style="@style/member_info"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/member_label"
+                android:text="@string/label_type"></TextView>
+
+            <TextView
+                android:id="@+id/memberType"
+                style="@style/member_info"></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
